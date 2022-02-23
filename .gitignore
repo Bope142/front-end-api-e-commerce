@@ -2,3 +2,10 @@
 *.css.map
 *.sass.map
 *.scss.map
+/css/sass/*
+/css/sass/*.scss
+/css/sass/dart-sass/*
+/css/sass/dart-sass/*
+/images/icons/*
+/images/icons/*.svg
+test.html

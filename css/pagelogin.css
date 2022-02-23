@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "sofiapro-light";
+  src: url("../fonts/sofiapro-light.otf");
+}
+.view__container {
+  display: flex;
+  padding: 30px 20px;
+  flex-direction: column;
+  height: auto;
+  gap: 15px;
+}
+.view__container .header__page {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  gap: 20px;
+}
+.view__container .header__page h1 {
+  font-family: "sofiapro-light";
+  font-size: 2rem;
+  color: #393939;
+  font-weight: bolder;
+}
+.view__container .header__page p {
+  font-family: "sofiapro-light";
+  color: #393939;
+  opacity: 0.7;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
+}
+.view__container .page__illustration {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  height: auto;
+}
+.view__container .page__illustration svg {
+  height: 18rem;
+  width: 18rem;
+}
+
+.form__page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: none;
+  height: auto;
+}
+.form__page .form__control__box {
+  flex: none;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__page .form__control__box label {
+  font-family: "sofiapro-light";
+  color: #393939;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.form__page .form__control__box .form__control__input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-family: "sofiapro-light";
+  color: #393939;
+  font-size: 1rem;
+  padding: 20px;
+  background: transparent;
+  transition: all 0.2s linear;
+}
+.form__page .form__control__box .form__control__input:focus {
+  background: #c347ff;
+  color: #ffffff;
+  border-color: transparent;
+}
+.form__page .form__control__box .form__control__input:focus::placeholder {
+  color: #ffffff;
+}
+.form__page #forgot__password {
+  align-self: flex-end;
+  color: #c3z7ff;
+  font-size: 0.8rem;
+}
+
+.text__form {
+  text-align: center;
+  align-self: center;
+  flex: none;
+  height: auto;
+  font-family: "sofiapro-light";
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 10px;
+}
+.text__form a {
+  font-family: "sofiapro-light";
+  color: #c3z7ff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=pagelogin.css.map */
