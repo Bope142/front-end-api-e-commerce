@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Reset fils
 */
 html, body, div, span, applet, object, iframe,
@@ -76,7 +83,6 @@ input[type=search] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -271,7 +277,8 @@ html input[disabled] {
  */
 input[type=checkbox],
 input[type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -289,7 +296,6 @@ input[type=radio] {
 input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
@@ -387,6 +393,18 @@ textarea {
   font-family: "sofiapro-light";
   src: url("../fonts/sofiapro-light.otf");
 }
+* {
+  -ms-overflow-style: none !important;
+  scroll-width: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+}
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
 body {
   font-family: "Poppins-Regular" !important;
   font-size: 1rem;
@@ -395,10 +413,17 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #ffffff;
   height: 100%;
   overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
 }
 .container .view-container {
   height: 100%;
@@ -412,9 +437,11 @@ body {
 .btn {
   padding: 20px;
   font-family: "Poppins-Regular";
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #ffffff;
   background: #c347ff;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 .btn:hover {
@@ -429,9 +456,19 @@ body {
   background: transparent !important;
   color: #393939;
   padding: 0 !important;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-family: "Poppins-Regular";
   font-size: 1rem;
 }
 
-/*# sourceMappingURL=main.css.map */
+.input-control {
+  font-family: "sofiapro-light";
+  color: #ffffff;
+  font-size: 1rem;
+  background: transparent;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}

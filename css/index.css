@@ -1,0 +1,127 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "sofiapro-light";
+  src: url("../fonts/sofiapro-light.otf");
+}
+.container__app {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container__app .app-views {
+  height: 100%;
+  width: 100%;
+}
+
+.app__footer {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.app__footer .first {
+  margin-left: 30px;
+}
+.app__footer .last {
+  margin-right: 30px;
+}
+
+.btn__item_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 3rem;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background: transparent;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn__item_tab svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn__item_tab svg * {
+  fill: #393939;
+  opacity: 0.2;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn__item_tab .tab__text {
+  font-family: "sofiapro-light";
+  font-size: 1rem;
+  color: #c347ff;
+  font-weight: bold;
+  display: none;
+}
+
+.btn__item__active {
+  background: rgba(231, 183, 255, 0.2);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  width: 8rem;
+}
+.btn__item__active svg * {
+  fill: #c347ff;
+  opacity: 1;
+}
+.btn__item__active .tab__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

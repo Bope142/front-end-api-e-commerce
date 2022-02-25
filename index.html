@@ -4,17 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <title>Shoes e-commerce project</title>
+    <title>Accieul</title>
     <link rel="stylesheet" href="./css/main.css">
-    
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-<div class="container">
-    <iframe src="./signin.html" frameborder="0" class="view-container">
-        
-    </iframe>
-</div>
+    <div class="container">
+        <div class="container__app">
+            <iframe src="./home-app.html" frameborder="0" class="app-views" allow="fullscreen">
+            </iframe>
+            <div class="app__footer">
+                <button class="btn__item_tab btn__item__active first">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2.0996094L1 12L4 12L4 21L10 21L10 15L14 15L14 21L20 21L20 12L23 12L12 2.0996094 z" fill="#FFFFFF" />
+                    </svg>
+                    <span class="tab__text">
+                        Accueil
+                    </span>
+                </button>
+                <button class="btn__item_tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2 A 1.0001 1.0001 0 0 0 11.205078 2.4316406L6.6679688 9L2.0019531 9C1.3409531 9 0.86110938 9.628625 1.0371094 10.265625L3.5976562 19.53125C3.8366562 20.39825 4.6244375 21 5.5234375 21L18.476562 21C19.375563 21 20.164297 20.39825 20.404297 19.53125L22.964844 10.265625C23.139844 9.628625 22.659047 9 21.998047 9L17.337891 9L12.853516 2.4355469 A 1.0001 1.0001 0 0 0 12 2 z M 12.023438 4.765625L14.916016 9L9.0976562 9L12.023438 4.765625 z M 12 13C13.105 13 14 13.895 14 15C14 16.105 13.105 17 12 17C10.895 17 10 16.105 10 15C10 13.895 10.895 13 12 13 z" fill="#FFFFFF" />
+                    </svg>
+                    <span class="tab__text">
+                        Panier
+                    </span>
+                </button>
+                <button class="btn__item_tab last">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-10C22,6.477,17.523,2,12,2z M12,4.75 c1.795,0,3.25,1.455,3.25,3.25s-1.455,3.25-3.25,3.25S8.75,9.795,8.75,8S10.205,4.75,12,4.75z M12,20 c-2.77,0-5.21-1.408-6.646-3.547C6.475,14.823,10.046,14,12,14s5.525,0.823,6.646,2.453C17.21,18.592,14.77,20,12,20z" fill="#FFFFFF" />
+                    </svg>
+                    <span class="tab__text">
+                        Profil
+                    </span>
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/tab-navigator.js"></script>
 </body>
 
 </html>

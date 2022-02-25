@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Poppins-Bold";
   src: url("../fonts/Poppins-Bold.ttf");
@@ -15,16 +22,28 @@
   src: url("../fonts/sofiapro-light.otf");
 }
 .view__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding: 30px 20px;
-  flex-direction: column;
+  padding: 50px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: auto;
-  gap: 15px;
+  gap: 35px;
 }
 .view__container .header__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   gap: 20px;
 }
 .view__container .header__page h1 {
@@ -42,10 +61,18 @@
 }
 .view__container .page__illustration {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   height: auto;
 }
 .view__container .page__illustration svg {
@@ -55,17 +82,31 @@
 
 .form__page {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   height: auto;
 }
 .form__page .form__control__box {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
 }
 .form__page .form__control__box label {
@@ -82,6 +123,8 @@
   font-size: 1rem;
   padding: 20px;
   background: transparent;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 .form__page .form__control__box .form__control__input:focus {
@@ -89,30 +132,48 @@
   color: #ffffff;
   border-color: transparent;
 }
+.form__page .form__control__box .form__control__input:focus::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.form__page .form__control__box .form__control__input:focus::-moz-placeholder {
+  color: #ffffff;
+}
+.form__page .form__control__box .form__control__input:focus:-ms-input-placeholder {
+  color: #ffffff;
+}
+.form__page .form__control__box .form__control__input:focus::-ms-input-placeholder {
+  color: #ffffff;
+}
 .form__page .form__control__box .form__control__input:focus::placeholder {
   color: #ffffff;
 }
 .form__page #forgot__password {
-  align-self: flex-end;
-  color: #c3z7ff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #c347ff;
   font-size: 0.8rem;
 }
 
 .text__form {
   text-align: center;
-  align-self: center;
-  flex: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   height: auto;
   font-family: "sofiapro-light";
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1rem;
   gap: 10px;
 }
 .text__form a {
   font-family: "sofiapro-light";
-  color: #c3z7ff;
+  color: #c347ff;
   font-size: 1rem;
   font-weight: bold;
 }
-
-/*# sourceMappingURL=pagelogin.css.map */

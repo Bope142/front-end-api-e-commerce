@@ -1,0 +1,172 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "sofiapro-light";
+  src: url("../fonts/sofiapro-light.otf");
+}
+.container__profil {
+  overflow: hidden;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+}
+.container__profil .title {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  font-family: "sofiapro-light";
+  color: #393939;
+  font-size: 1.3rem;
+}
+.container__profil .profil__information {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container__profil .profil__information .img__profil_user {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container__profil .profil__information .img__profil_user img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container__profil .profil__information .profil__user__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.container__profil .profil__information .profil__user__info .name__user {
+  font-weight: bold;
+}
+
+.profil__menu {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+.profil__menu .menu__profil {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 60px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f3f3f3;
+  overflow: hidden;
+  gap: 15px;
+  border-radius: 3px;
+}
+.profil__menu .menu__profil .icons__menu {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 100%;
+  width: 55px;
+  background: rgba(231, 183, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+}
+.profil__menu .menu__profil .icons__menu svg {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.profil__menu .menu__profil .icons__menu svg * {
+  fill: #c347ff;
+}
+.profil__menu .menu__profil .menu__title {
+  font-size: 1rem;
+  color: #393939;
+  width: 100%;
+}
+.profil__menu .menu__profil .more {
+  margin-left: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.profil__menu .menu__profil .more * {
+  fill: #393939;
+}

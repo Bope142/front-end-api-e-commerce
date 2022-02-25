@@ -1,0 +1,422 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "sofiapro-light";
+  src: url("../fonts/sofiapro-light.otf");
+}
+.app__header {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 100px;
+  overflow: hidden;
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+}
+.app__header .header__search-bar {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f3f3f3;
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 20px;
+  gap: 5px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.app__header .header__search-bar svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.app__header .header__search-bar svg * {
+  fill: #d0d0d2;
+}
+.app__header .header__search-bar .input-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  height: 100%;
+}
+.app__header .header__search-bar .input-control::-webkit-input-placeholder {
+  color: #d0d0d2;
+}
+.app__header .header__search-bar .input-control::-moz-placeholder {
+  color: #d0d0d2;
+}
+.app__header .header__search-bar .input-control:-ms-input-placeholder {
+  color: #d0d0d2;
+}
+.app__header .header__search-bar .input-control::-ms-input-placeholder {
+  color: #d0d0d2;
+}
+.app__header .header__search-bar .input-control::placeholder {
+  color: #d0d0d2;
+}
+.app__header .header__search-bar:hover {
+  background: #c347ff;
+}
+.app__header .header__search-bar:hover * {
+  fill: #ffffff;
+}
+
+.container-app {
+  background: rgba(231, 183, 255, 0.02);
+  height: auto;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  gap: 50px;
+  position: relative;
+}
+.container-app * {
+  outline: none !important;
+}
+
+.app__section {
+  height: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  overflow-x: scroll;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.section__content {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+  padding: 15px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  gap: 5px;
+}
+.section__content .section__title {
+  color: #393939;
+  font-size: 0.9rem;
+  font-family: "Poppins-Medium";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section__content .section__title .see__all {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.7rem;
+  font-family: "Poppins-Medium";
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.shoes__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+  gap: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+  padding: 10px 5px;
+}
+
+.shoes__product {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 200px;
+  width: 160px;
+  background: #ffffff;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.shoes__product * {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.shoes__product:hover.image__shoes,
+.shoes__product:hover img {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.shoes__product:hover .price__promotion {
+  background: #c347ff !important;
+}
+.shoes__product .product__header {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 70%;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.shoes__product .product__header .image__shoes,
+.shoes__product .product__header img {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.shoes__product .product__header .header__bloc {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.shoes__product .product__header .header__bloc .price__promotion {
+  margin: 10px 0 0 10px;
+  padding: 5px;
+  background: #e7b7ff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+.shoes__product .product__bottom {
+  height: 100%;
+  margin: 5px !important;
+  border-radius: 5px;
+  background: #f3f3f3;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5px;
+  gap: 10px;
+}
+.shoes__product .product__bottom .rigth {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shoes__product .product__bottom .rigth .btn__add__cart {
+  background: #c347ff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.shoes__product .product__bottom .rigth .btn__add__cart svg {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.shoes__product .product__bottom .rigth .btn__add__cart svg * {
+  fill: #ffffff;
+}
+.shoes__product .product__bottom .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+}
+.shoes__product .product__bottom .left .name__shoes {
+  font-size: 0.8rem;
+  color: #393939;
+  font-weight: bold;
+  white-space: nowrap;
+  -o-text-overflow: "..." !important;
+     text-overflow: "..." !important;
+}
+.shoes__product .product__bottom .left .price__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+.shoes__product .product__bottom .left .price__content * {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.shoes__product .product__bottom .left .price__content .price__shoes {
+  color: #c347ff;
+  font-weight: bold;
+}
+.shoes__product .product__bottom .left .price__content .price__before {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.categories__content {
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 5px 1px;
+}
+.categories__content .categorie {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: auto;
+  padding: 8px;
+  background: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -ms-overflow-style: none !important;
+  scroll-width: none !important;
+  cursor: pointer;
+}
+.categories__content .categorie::-webkit-scrollbar {
+  display: none !important;
+}
+.categories__content .categorie .categorie__icons {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+  width: auto;
+}
+.categories__content .categorie .categorie__icons svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.categories__content .categorie .categorie__icons svg * {
+  fill: #c347ff;
+}
+.categories__content .categorie .categorie__names {
+  color: #393939;
+  font-size: 0.8rem;
+}
+.categories__content .select__category {
+  border-color: #c347ff;
+}

@@ -1,0 +1,239 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "sofiapro-light";
+  src: url("../fonts/sofiapro-light.otf");
+}
+.container__shoes_details {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 100px;
+}
+.container__shoes_details .image__shoes {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background: rgba(231, 183, 255, 0.2);
+  position: relative;
+  -webkit-transition: all 0.8s linear;
+  -o-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+.container__shoes_details .image__shoes img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.container__shoes_details .image__shoes img:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.container__shoes_details .image__shoes .control-window {
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  height: 10%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container__shoes_details .image__shoes .control-window button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.container__shoes_details .image__shoes .control-window .btn-back {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15px;
+}
+.container__shoes_details .image__shoes .control-window .btn-back svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.container__shoes_details .image__shoes .control-window .btn-back svg * {
+  fill: #393939;
+}
+.container__shoes_details .image__shoes .control-window .btn-favorite {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.container__shoes_details .image__shoes .control-window .btn-favorite svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.container__shoes_details .image__shoes .control-window .btn-favorite svg * {
+  fill: #ff3d00;
+}
+.container__shoes_details .image__shoes_scroll {
+  height: 200px !important;
+}
+.container__shoes_details .details {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  padding: 15px 30px;
+}
+.container__shoes_details .details .shoes__name {
+  font-size: 1.5rem;
+  color: #393939;
+  font-family: "Poppins-Bold";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+}
+.container__shoes_details .details .description__shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+}
+.container__shoes_details .details .description__shoes span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.container__shoes_details .details .description__shoes .text__details_shoes {
+  font-family: "sofiapro-light";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: auto;
+  white-space: normal;
+  line-height: 1.5rem;
+}
+
+.footer__cart {
+  background: red;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__cart .price__shoes {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.footer__cart .price__shoes .text-h {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.2);
+}
+.footer__cart .price__shoes .price {
+  font-weight: bold;
+  color: #c347ff;
+  font-size: 1.1rem;
+}
+.footer__cart .btn {
+  margin-right: 30px;
+  padding: 15px 25px !important;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
